@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aula 04 - Agente com memória</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <button id="nova" type="button">+ Nova conversa</button>
+    <div class="sidebar-titulo">Histórico</div>
+    <ul id="lista-conversas"></ul>
+  </aside>
+
+  <main class="main-chat">
+    <header class="topo-chat">
+      <h1>Agente com memória</h1>
+    </header>
+
+    <div id="chat" aria-live="polite"></div>
+
+    <div class="area-form">
+      <form id="form">
+        <input id="pergunta" aria-label="Sua mensagem" placeholder="Digite sua mensagem..." autocomplete="off" required>
+        <button id="enviar" type="submit">Enviar</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
